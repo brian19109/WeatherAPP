@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">WeatherAPI</string>
+    <string name="api_key">AIzaSyAFrmJTVMDmv_vEYZEe14yRznyi6EIi4xM</string>
+
+    <string name="custom_info_window_current_position_title">目標位置：</string>
+    <string name="custom_info_window_current_time_title">現在時間：</string>
+    <string name="custom_info_window_duration_time_title">所需時間：</string>
+    <string name="custom_info_window_arrival_time_title">預計扺達：</string>
+</resources>

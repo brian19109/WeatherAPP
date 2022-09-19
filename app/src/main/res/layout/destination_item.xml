@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/constraintLayout_destination_item"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="8dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout_travel_mode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/iv_travel_mode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_travel_mode_car"
+            app:layout_constraintLeft_toLeftOf="@+id/constraintLayout_travel_mode"
+            app:layout_constraintTop_toTopOf="@+id/constraintLayout_travel_mode"
+            app:tint="@color/carolina_blue" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout_travel_mode_options"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            app:layout_constraintLeft_toRightOf="@id/iv_travel_mode"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/iv_travel_mode_car"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:src="@drawable/ic_travel_mode_car"
+                app:layout_constraintLeft_toLeftOf="@+id/constraintLayout_travel_mode_options"
+                app:layout_constraintTop_toTopOf="@+id/constraintLayout_travel_mode_options"
+                app:tint="@color/carolina_blue" />
+
+            <ImageView
+                android:id="@+id/iv_travel_mode_scooter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:src="@drawable/ic_travel_mode_scooter"
+                app:layout_constraintLeft_toRightOf="@+id/iv_travel_mode_car"
+                app:layout_constraintTop_toTopOf="@+id/constraintLayout_travel_mode_options"
+                app:tint="@color/carolina_blue" />
+
+            <ImageView
+                android:id="@+id/iv_travel_mode_bicycle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:src="@drawable/ic_travel_mode_bicycle"
+                app:layout_constraintLeft_toRightOf="@+id/iv_travel_mode_scooter"
+                app:layout_constraintTop_toTopOf="@+id/constraintLayout_travel_mode_options"
+                app:tint="@color/carolina_blue" />
+
+            <ImageView
+                android:id="@+id/iv_travel_mode_walk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:src="@drawable/ic_travel_mode_walk"
+                app:layout_constraintLeft_toRightOf="@+id/iv_travel_mode_bicycle"
+                app:layout_constraintTop_toTopOf="@+id/constraintLayout_travel_mode_options"
+                app:tint="@color/carolina_blue" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout_destination_data"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout_travel_mode">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout_destination_item_left_part"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            app:layout_constraintBottom_toBottomOf="@+id/constraintLayout_destination_data"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="@id/constraintLayout_destination_data">
+
+            <ImageView
+                android:id="@+id/iv_target_point"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_target_point"
+                app:layout_constraintLeft_toLeftOf="@+id/constraintLayout_destination_item_left_part"
+                app:layout_constraintTop_toTopOf="@+id/constraintLayout_destination_item_left_part"
+                app:tint="@color/viking_blue" />
+
+            <TextView
+                android:id="@+id/tv_destination_sid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toBottomOf="@+id/constraintLayout_destination_item_left_part"
+                app:layout_constraintLeft_toRightOf="@+id/iv_target_point" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout_destination_item_middle_part"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            app:layout_constraintLeft_toRightOf="@+id/constraintLayout_destination_item_left_part"
+            app:layout_constraintTop_toTopOf="@+id/constraintLayout_destination_data">
+
+            <TextView
+                android:id="@+id/tv_destination_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="4dp"
+                android:layout_marginLeft="4dp"
+                android:ellipsize="end"
+                android:hint="請輸入地址"
+                android:maxLines="2"
+                android:textSize="20sp"
+                app:layout_constraintLeft_toLeftOf="@+id/constraintLayout_destination_item_middle_part"
+                app:layout_constraintTop_toTopOf="@+id/constraintLayout_destination_item_middle_part" />
+
+            <TextView
+                android:id="@+id/tv_stay_duration"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="4dp"
+                android:layout_marginLeft="4dp"
+                android:text="停留：00:00"
+                android:textSize="20sp"
+                app:layout_constraintLeft_toLeftOf="@+id/constraintLayout_destination_item_middle_part"
+                app:layout_constraintTop_toBottomOf="@+id/tv_destination_address" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayout_stay_duration_editing"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/alice_blue"
+                android:padding="12dp"
+                android:visibility="gone"
+                app:layout_constraintLeft_toLeftOf="@+id/constraintLayout_destination_item_middle_part"
+                app:layout_constraintTop_toBottomOf="@+id/tv_stay_duration">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/constraintLayout_stay_duration_editing_top"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <TextView
+                        android:id="@+id/tv_stay_duration_editing_hours_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingHorizontal="24dp"
+                        android:text="小時"
+                        android:textColor="@color/black"
+                        android:textSize="12sp"
+                        app:layout_constraintEnd_toStartOf="@+id/tv_stay_duration_editing_minutes_title"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="@+id/constraintLayout_stay_duration_editing_top" />
+
+                    <TextView
+                        android:id="@+id/tv_stay_duration_editing_minutes_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingHorizontal="28dp"
+                        android:text="分鐘"
+                        android:textColor="@color/black"
+                        android:textSize="12sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintStart_toEndOf="@+id/tv_stay_duration_editing_hours_title"
+                        app:layout_constraintTop_toTopOf="@+id/constraintLayout_stay_duration_editing_top" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/constraintLayout_stay_duration_editing_middle"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:layout_constraintLeft_toLeftOf="@id/constraintLayout_stay_duration_editing"
+                    app:layout_constraintTop_toBottomOf="@id/constraintLayout_stay_duration_editing_top">
+
+                    <Spinner
+                        android:id="@+id/spinner_stay_duration_hours"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:backgroundTint="@color/black"
+                        app:layout_constraintEnd_toStartOf="@+id/spinner_stay_duration_minutes"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="@+id/constraintLayout_stay_duration_editing_middle" />
+
+                    <Spinner
+                        android:id="@+id/spinner_stay_duration_minutes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:backgroundTint="@color/black"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintStart_toEndOf="@+id/spinner_stay_duration_hours"
+                        app:layout_constraintTop_toTopOf="@+id/constraintLayout_stay_duration_editing_middle" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/constraintLayout_stay_duration_editing_bottom"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:layout_constraintLeft_toLeftOf="@id/constraintLayout_stay_duration_editing"
+                    app:layout_constraintTop_toBottomOf="@+id/constraintLayout_stay_duration_editing_middle">
+
+                    <TextView
+                        android:id="@+id/tv_stay_duration_editing_cancel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingHorizontal="18dp"
+                        android:text="取消"
+                        android:textColor="@color/black"
+                        android:textSize="18sp"
+                        app:layout_constraintEnd_toStartOf="@+id/tv_stay_duration_editing_confirm"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="@+id/constraintLayout_stay_duration_editing_bottom" />
+
+                    <TextView
+                        android:id="@+id/tv_stay_duration_editing_confirm"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingHorizontal="20dp"
+                        android:text="確定"
+                        android:textColor="@color/black"
+                        android:textSize="18sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintStart_toEndOf="@+id/tv_stay_duration_editing_cancel"
+                        app:layout_constraintTop_toTopOf="parent" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout_destination_item_right_part"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            app:layout_constraintBottom_toBottomOf="@id/constraintLayout_destination_data"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/constraintLayout_destination_data">
+
+            <ImageView
+                android:id="@+id/iv_trash_can_delete_destination_item"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_trash_can"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="@id/constraintLayout_destination_item_right_part" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

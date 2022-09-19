@@ -1,0 +1,14 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.WeatherAPI" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <item name="colorPrimary">@color/blue_fluorescent</item>
+
+        <!-- Applying the new style that is defined below  -->
+        <item name="actionBarStyle">@style/ActionBarTheme</item>
+    </style>
+
+    <!-- new style for ActionBar -->
+    <style name="ActionBarTheme" parent="Widget.MaterialComponents.ActionBar.Primary">
+        <item name="background">@color/blue_fluorescent</item>
+    </style>
+</resources>

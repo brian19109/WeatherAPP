@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="blue_fluorescent">#DCF9FB</color>
+    <color name="medium_turquoise">#53BDE8</color>
+    <color name="carolina_blue">#9DBCD2</color>
+    <color name="dark_sky_blue">#96BED5</color>
+    <color name="london_hue">#CCACD3</color>
+    <color name="butterfly_bush">#6750A4</color>
+    <color name="jumbo">#79757F</color>
+    <color name="bright_turquoise">#2BD1F5</color>
+    <color name="viking_blue">#5CC8D3</color>
+    <color name="maya_blue">#5ACCFA</color>
+    <color name="blizzard_blue">#B0E8ED</color>
+    <color name="azureish_white">#D8E5ED</color>
+    <color name="alice_blue">#EDF8F9</color>
+    <color name="alabaster_gray">#F9F9F9</color>
+
+    <color name="temperature_background_color_35">#E545BD</color>
+    <color name="temperature_background_color_34">#E54595</color>
+    <color name="temperature_background_color_33">#E5456D</color>
+    <color name="temperature_background_color_32">#E54545</color>
+    <color name="temperature_background_color_31">#E56D45</color>
+    <color name="temperature_background_color_30">#E59545</color>
+    <color name="temperature_background_color_29">#E5BD45</color>
+    <color name="temperature_background_color_28">#E5E545</color>
+    <color name="temperature_background_color_27">#BDE545</color>
+    <color name="temperature_background_color_26">#95E545</color>
+    <color name="temperature_background_color_25">#6DE545</color>
+    <color name="temperature_background_color_24">#45E545</color>
+    <color name="temperature_background_color_23">#45E56D</color>
+    <color name="temperature_background_color_22">#45E595</color>
+    <color name="temperature_background_color_21">#45E5BD</color>
+    <color name="temperature_background_color_20">#45E5E5</color>
+    <color name="temperature_background_color_19">#45BDE5</color>
+    <color name="temperature_background_color_18">#4595E5</color>
+    <color name="temperature_background_color_17">#456DE5</color>
+    <color name="temperature_background_color_16">#4545E5</color>
+    <color name="temperature_background_color_15">#6D45E5</color>
+</resources>
